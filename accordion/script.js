@@ -38,7 +38,7 @@ accordion.addEventListener("click", (e) => {
 
   const up = titleElement.querySelector(".up");
   const down = titleElement.querySelector(".down");
-  console.log(up, down);
+
   if (titleElement.classList.contains("active")) {
     titleElement.classList.remove("active");
     titleElement.parentElement.querySelector(".text").classList.remove("show");
@@ -51,3 +51,21 @@ accordion.addEventListener("click", (e) => {
     up.classList.add("hidden");
   }
 });
+
+// ######### accrodion2
+
+const closeAllExeptCur = (e) => {
+  if (checkbox2.checked === true) return;
+  if (e.target.closest("summary")) {
+    accordion2.querySelectorAll("summary").forEach((summary) => {
+      if (summary !== e.target.closest("summary")) {
+        summary.parentElement.removeAttribute("open");
+      }
+    });
+    s;
+  }
+};
+const accordion2 = document.querySelector(".accordion2");
+const checkbox2 = document.querySelector("#checkbox2");
+
+accordion2.addEventListener("click", closeAllExeptCur);
