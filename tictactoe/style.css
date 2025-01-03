@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.field {
+  margin: auto;
+  justify-content: center;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 5px green solid;
+  text-align: center;
+  font-size: 5rem;
+}

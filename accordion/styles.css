@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: auto;
+}
+
+.accordion {
+  grid-column: 2/3;
+}
+.section {
+  border: 5px solid black;
+}
+
+.title {
+  border: 5px solid red;
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.text {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+}
+
+.text.show {
+  max-height: 1000px;
+}
+
+span.hidden {
+  display: none;
+}

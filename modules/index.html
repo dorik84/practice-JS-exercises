@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <button id="add">Add New</button>
+      <dialog>
+        <fieldset>
+          <legend>Send Messsage</legend>
+          <form method="dialog">
+            <label for="name">Name</label>
+            <input type="text" max="40" id="name" />
+            <label for="email">Email</label>
+            <input type="email" max="40" id="email" />
+            <label for="messages">Message</label>
+            <textarea max="250" id="message"></textarea>
+            <button type="button" id="cancel">Cancel</button>
+            <button type="submit">Submit</button>
+          </form>
+        </fieldset>
+      </dialog>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

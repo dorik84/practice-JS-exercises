@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 60%;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px darkgray solid;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
