@@ -1,0 +1,60 @@
+.toastWrapper,
+.dialogWrapper {
+  border: 2px black solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300 px;
+  padding: 0 1em;
+  gap: 2em;
+  border-radius: 4px;
+
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.close {
+  padding: 0;
+  margin: 0;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+  object-fit: cover;
+  /* border: 2px green solid; */
+}
+
+.top-right {
+  right: 20px;
+  top: 20px;
+  flex-direction: column;
+}
+
+.bottom-left {
+  left: 20px;
+  bottom: 20px;
+  flex-direction: column-reverse;
+}
+
+#notification-position {
+  position: fixed;
+  /* border: 2px red solid; */
+  display: flex;
+
+  gap: 1em;
+}
+
+.dialogWrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+dialog {
+  border: none;
+}
