@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="nav-buttons">
+        <button id="prev" aria-label="Previous Image">Prev</button>
+        <button id="next" aria-label="Next Image">Next</button>
+      </div>
+      <div class="navigators" aria-label="Carousel navigation">
+        <template id="dot-template">
+          <button class="dot"></button>
+        </template>
+      </div>
+      <div id="slider">
+        <div class="slide">Loading ...</div>
+        <template id="slide-template">
+          <div class="slide"></div>
+        </template>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
