@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  /* background-color: pink; */
+  width: clamp(200px, 50%, 600px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  align-self: center;
+}
+
+#unique-id-fieldset {
+  width: 100%;
+
+  label {
+    color: blue;
+  }
+  .error {
+    color: red;
+  }
+}
